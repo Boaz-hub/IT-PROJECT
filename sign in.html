@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>manager</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-s4D50ir1jHgB9x28hup2nhl+8PIIOpKNFzXhIlYFJ39IhUgqVxZPpIddemBMXe8ZBJToxeCnWZ8dNYY/MzBTng==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/manager2.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    position: relative;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+  }
+  .company-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: green;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+  }
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  }
+  .btn-green {
+    background-color: #4CAF50;
+    color: #fff;
+  }
+  .btn-green:hover {
+    background-color: #45a049;
+  }
+  .btn-blue {
+    background-color: #007bff;
+    color: #fff;
+  }
+  .btn-blue:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <img src="images/logo.jpg" alt="Company Logo" class="logo">
+  <h2 class="company-name">Transmara Sugar Company</h2>
+  <h2 class="company-name">Manager sign up </h2>
+
+  <form action="#">
+    <div class="form-group">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="idnumber">ID Number</label>
+      <input type="text" id="idnumber" name="idnumber" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div class="form-group">
+      <label for="country">Select Country</label>
+      <select id="country" name="country" required>
+        <option value="" disabled selected>County</option>
+        <option value="country1">Nairobi</option>
+        <option value="country2">Mombasa</option>
+        <!-- Add more countries as needed -->
+      </select>
+    </div>
+    <div class="btn-container">
+      <button type="submit" class="btn btn-green">Create Account</button>
+      <button type="button" class="btn btn-blue">Account Login</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
